@@ -1,0 +1,9 @@
+version: '3.3'
+services:
+    server:
+        container_name: botpress
+        ports:
+            - '3000:3000'
+        volumes:
+            - 'botpress_data:/botpress/data'
+        image: 'botpress/server:$TAG'
